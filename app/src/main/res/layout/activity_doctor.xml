@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DoctorActivity">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/DoctorInfoCArdView"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="15dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/teal_200"
+        android:layout_height="wrap_content" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="144dp"
+                tools:text="دکتر زهرا کشاورز"
+                app:layout_constraintTop_toBottomOf="@id/imageView"
+                app:layout_constraintBottom_toTopOf="@id/textViewField"/>
+
+            <TextView
+                android:id="@+id/textViewOnlineStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewName"
+                app:layout_constraintEnd_toStartOf="@+id/textViewName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textViewName"
+                tools:text="آنلاین" />
+
+            <TextView
+                android:id="@+id/textViewField"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@id/button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewName"
+                tools:text="روانشناسی ،  مشاوره - روانشناسی ،  مشاوره  - روانشناسی ،  مشاوره  - روانشناسی ،  مشاوره " />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="48dp"
+                android:paddingRight="48dp"
+                android:text="@string/send_message"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewField" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="128dp"
+                android:layout_height="131dp"
+                app:layout_constraintBottom_toTopOf="@id/textViewName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon"
+                android:layout_marginTop="16dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginEnd="8dp"
+            android:textSize="20dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/consultancyTYpe"/>
+        <LinearLayout
+            android:id="@+id/llConsultancy"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_height="wrap_content"
+            android:background = "@drawable/rounded_corner"
+            android:backgroundTint="@color/purple_200"
+            android:layout_marginBottom="8dp">
+            <TextView
+                android:id="@+id/textViewConsultancy"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="مشاوره ده دقیقه ای"/>
+            <TextView
+                android:id="@+id/textViewConsultancyPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="72 هزار تومان"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llConsultancy2"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_height="wrap_content"
+            android:background = "@drawable/rounded_corner"
+            android:backgroundTint="@color/purple_200"
+            android:layout_marginBottom="8dp">
+            <TextView
+                android:id="@+id/textViewConsultancy2"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="مشاوره ده دقیقه ای"/>
+            <TextView
+                android:id="@+id/textViewConsultancyPrice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="72 هزار تومان"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llConsultancy3"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_height="wrap_content"
+            android:background = "@drawable/rounded_corner"
+            android:backgroundTint="@color/purple_200"
+            android:layout_marginBottom="8dp">
+            <TextView
+                android:id="@+id/textViewConsultancy3"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="مشاوره ده دقیقه ای"/>
+            <TextView
+                android:id="@+id/textViewConsultancyPrice3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="72 هزار تومان"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

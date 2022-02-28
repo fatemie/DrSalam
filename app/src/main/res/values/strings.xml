@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Dr Salam</string>
+    <string name="send_message">ارسال پیام</string>
+    <string name="consultancyTYpe">انتخاب مدل مشاوره:</string>
+    <string name="name">نام</string>
+    <string name="tel">تلفن</string>
+    <string name="checkPatientQ1">آیا آمادگی صحبت کردن با دکتر را دارید ؟</string>
+    <string name="ok">تایید</string>
+</resources>
